@@ -1,9 +1,10 @@
-| [<img src="https://avatars1.githubusercontent.com/u/46455727?s=400&v=4" width=100 alt="GitHub avatar for author MarkStrickland562">](https://github.com/MarkStrickland562) |
-|:-----:|:-----:|:-----:|:-----:|
-| [**MarkStrickland562**](https://github.com/MarkStrickland562) |
-| Mark Strickland |
+## **Mark Strickland**
 
-## | **Super Galactic Age Calculator** |
+[<img src="https://avatars1.githubusercontent.com/u/46455727?s=400&v=4" width=100 alt="GitHub avatar for author MarkStrickland562">](https://github.com/MarkStrickland562)
+
+[**MarkStrickland562**](https://github.com/MarkStrickland562)
+
+## **Super Galactic Age Calculator**
 
 ###### Created March 22nd, 2019.
 

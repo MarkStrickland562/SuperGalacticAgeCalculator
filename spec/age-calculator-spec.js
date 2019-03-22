@@ -11,6 +11,14 @@ describe('AgeCalculator', function() {
     expect(userAge.userGender).toEqual("M");
   });
 
+  it('should validate that the entered birth date is in the past', function() {
+    let testDate = "2020-05-03";
+    let gender = "M";
+    let userAge = new AgeCalculator(testDate, gender);
+
+    expect(userAge.userBirthDateIsValid()).toBeFalsy();
+  });
+
   it('should calculate the age of the user on Earth', function() {
     let testDate = "1962-05-03";
     let gender = "M";
@@ -114,5 +122,4 @@ describe('AgeCalculator', function() {
 
     expect(userAge.userExceededLifeExpectancy()).toBeTruthy();
   });
-
 })

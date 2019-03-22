@@ -7,6 +7,7 @@ $(document).ready(function() {
     let d = new AgeCalculator(myDate, 'M');
     $('#result').text(d.userBirthDate);
 console.log(d.userYearsLeftEarth());
-console.log(d.userExceededLifeExpectancy());
+console.log(d.userBirthDateIsValid());
+
   });
 });

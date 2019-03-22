@@ -6,8 +6,17 @@ export default class AgeCalculator {
     this.day = parseInt(inputBirthDate.substring(8,10));
     this.userBirthDate = new Date(this.year, this.month - 1, this.day);
     this.userGender = inputGender.toUpperCase();
+    this.currentDate = new Date;
   }
 
+  userBirthDateIsValid() {
+    if (this.userBirthDate >= this.currentDate) {
+      return false
+    } else {
+      return true
+    }
+  }
+  
   userAgeEarth() {
     return Math.floor((new Date() - this.userBirthDate) / 31536000000);
   }

@@ -329,26 +329,60 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
 ## Setup and Use
 
 #### Prerequisites
+* bootstrap 4.3.1
+* jquery 3.2.1
+* popper.js 1.14.7
+* babel-core 6.26.0
+* babel-loader 7.1.3
+* babel-preset-es2015 6.24.1
+* clean-webpack-plugin 0.1.18
+* css-loader 0.28.10
+* eslint 4.18.2
+* eslint-loader 2.0.0
+* file-loader 3.0.1
+* html-webpack-plugin 3.0.6
+* jasmine 3.1.0
+* jasmine-core 2.99.1
+* karma 2.0.0
+* karma-chrome-launcher 2.2.0
+* karma-cli 1.0.1
+* karma-jasmine 1.1.1
+* karma-jasmine-html-reporter 0.2.2
+* karma-jquery 0.2.2
+* karma-sourcemap-loader 0.3.7
+* karma-webpack 2.0.13
+* style-loader 0.20.2
+* uglifyjs-webpack-plugin 1.2.2
+* url-loader 1.1.2
+* webpack 4.19.1
+* webpack-cli 2.0.9
+* webpack-dev-server 3.1.0
 
 
-#### Download Repo
-1. Clone [this repository](https://github.com/MarkStrickland562/GalacticAgeCalculator): _$ git clone https://github.com/MarkStrickland562/GalacticAgeCalculator.git
+#### Download the Repository
+1. Clone [this repository](https://github.com/MarkStrickland562/GalacticAgeCalculator):
 
-#### Open Locally - Browser
+       $ git clone https://github.com/MarkStrickland562/GalacticAgeCalculator.git
 
-#### Open Locally - Mono
+#### Install, build and run the application
+1. Navigate to the application root directory:
 
-#### Compile Locally
+       $ cd GalacticAgeCalculator
+2. Install the required packages:
+       $ npm Install
+3. Build the application:
+       $ npm run build
+4. Run the application:
+       $ npm run start
 
-#### Edit
-
-#### Test
+#### Test the application
+1. Execute the tests with Jasmine and karma:
+       $ npm run test
 
 ## Built With
 
 * Windows 10.1
 * iMac OS X El Capitan 10.11.6
-* Linux Ubuntu 18.04 bionic
 * Atom (IDE)
 
 ## Support and contact details

@@ -82,5 +82,14 @@ describe('AgeCalculator', function() {
     expect(userAge.userYearsLeftVenus()).toEqual(32);
   });
 
+  it('should calculate the remaining years of life based on gender for the user on Mars', function() {
+    let testDate = "1962-05-03";
+    let gender = "M";
+    let userAge = new AgeCalculator(testDate, gender);
+
+    expect(userAge.userYearsLeftMars()).toEqual(10);
+  });
+
+
 
 })

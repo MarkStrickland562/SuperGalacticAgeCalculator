@@ -65,4 +65,15 @@ export default class AgeCalculator {
     }
   }
 
+  userYearsLeftMars() {
+    const maleLifeExp = 76;
+    const femaleLifeExp = 81;
+
+    if (this.gender === 'M') {
+      return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / 1.88));
+    } else {
+      return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / 1.88));
+    }
+  }
+
 }

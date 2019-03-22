@@ -5,7 +5,7 @@ export default class AgeCalculator {
     this.month = parseInt(inputBirthDate.substring(5,7));
     this.day = parseInt(inputBirthDate.substring(8,10));
     this.userBirthDate = new Date(this.year, this.month - 1, this.day);
-    this.gender = inputGender;
+    this.userGender = inputGender.toUpperCase();
   }
 
   userAgeEarth() {
@@ -36,7 +36,7 @@ export default class AgeCalculator {
     const maleLifeExp = 76;
     const femaleLifeExp = 81;
 
-    if (this.gender === 'M') {
+    if (this.userGender === 'M') {
       return maleLifeExp - this.userAgeEarth();
     } else {
       return femaleLifeExp - this.userAgeEarth();
@@ -47,7 +47,7 @@ export default class AgeCalculator {
     const maleLifeExp = 76;
     const femaleLifeExp = 81;
 
-    if (this.gender === 'M') {
+    if (this.userGender === 'M') {
       return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / .24));
     } else {
       return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / .24));
@@ -58,7 +58,7 @@ export default class AgeCalculator {
     const maleLifeExp = 76;
     const femaleLifeExp = 81;
 
-    if (this.gender === 'M') {
+    if (this.userGender === 'M') {
       return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / .62));
     } else {
       return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / .62));
@@ -69,7 +69,7 @@ export default class AgeCalculator {
     const maleLifeExp = 76;
     const femaleLifeExp = 81;
 
-    if (this.gender === 'M') {
+    if (this.userGender === 'M') {
       return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / 1.88));
     } else {
       return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / 1.88));
@@ -80,7 +80,7 @@ export default class AgeCalculator {
     const maleLifeExp = 76;
     const femaleLifeExp = 81;
 
-    if (this.gender === 'M') {
+    if (this.userGender === 'M') {
       return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / 11.86));
     } else {
       return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / 11.86));
@@ -91,11 +91,18 @@ export default class AgeCalculator {
     const maleLifeExp = 76;
     const femaleLifeExp = 81;
 
-    if (this.gender === 'M') {
+    if (this.userGender === 'M') {
       return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / 29.457));
     } else {
       return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / 29.457));
     }
   }
 
+  userExceededLifeExpectancy() {
+    if (this.userYearsLeftEarth() < 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

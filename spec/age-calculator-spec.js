@@ -8,6 +8,7 @@ describe('AgeCalculator', function() {
     let userAge = new AgeCalculator(testDate, gender);
 
     expect(userAge.userBirthDate).toEqual(new Date(1962, 4, 3));
+    expect(userAge.userGender).toEqual("M");
   });
 
   it('should calculate the age of the user on Earth', function() {
@@ -104,6 +105,14 @@ describe('AgeCalculator', function() {
     let userAge = new AgeCalculator(testDate, gender);
 
     expect(userAge.userYearsLeftSaturn()).toBeLessThan(1);
+  });
+
+  it('should determine if the user has exceeded their life expectancy', function() {
+    let testDate = "1900-01-01";
+    let gender = "M";
+    let userAge = new AgeCalculator(testDate, gender);
+
+    expect(userAge.userExceededLifeExpectancy()).toBeTruthy();
   });
 
 })

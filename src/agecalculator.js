@@ -12,7 +12,23 @@ export default class AgeCalculator {
   }
 
   userAgeMercury() {
-    return Math.floor((new Date() - this.userBirthDate) / 31536000000);
+    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / .24));
+  }
+
+  userAgeVenus() {
+    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / .62));
+  }
+
+  userAgeMars() {
+    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / 1.88));
+  }
+
+  userAgeJupiter() {
+    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / 11.86));
+  }
+
+  userAgeSaturn() {
+    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / 29.457));
   }
 
 }

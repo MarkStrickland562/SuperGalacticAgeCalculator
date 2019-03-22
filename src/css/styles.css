@@ -6,3 +6,11 @@ html, body {
   text-align: center;
   font-style: italic;
 }
+
+.row-header {
+  border-width: 2px;
+}
+
+.row-data {
+  border-width: 2px;
+}

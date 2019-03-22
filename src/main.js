@@ -5,11 +5,27 @@ $(document).ready(function() {
     event.preventDefault();
     let myDate = $('#myDate').val();
     let d = new AgeCalculator(myDate, 'M');
-    $('#earthAge').text(d.userAgeEarth());
-    $('#mercuryAge').text(d.userAgeMercury());
-    $('#venusAge').text(d.userAgeVenus());
-    $('#marsAge').text(d.userAgeMars());
-    $('#jupiterAge').text(d.userAgeJupiter());
-    $('#saturnAge').text(d.userAgeSaturn());
+    if (d.userBirthDateIsValid()) {
+      $('#validDate').text("The date you entered is valid.");
+      $('#earthAge').text(d.userAgeEarth());
+      $('#mercuryAge').text(d.userAgeMercury());
+      $('#venusAge').text(d.userAgeVenus());
+      $('#marsAge').text(d.userAgeMars());
+      $('#jupiterAge').text(d.userAgeJupiter());
+      $('#saturnAge').text(d.userAgeSaturn());
+      $('#userYearsLeftEarth').text(d.userYearsLeftEarth());
+      $('#userYearsLeftMercury').text(d.userYearsLeftMercury());
+      $('#userYearsLeftVenus').text(d.userYearsLeftVenus());
+      $('#userYearsLeftMars').text(d.userYearsLeftMars());
+      $('#userYearsLeftJupiter').text(d.userYearsLeftJupiter());
+      $('#userYearsLeftSaturn').text(d.userYearsLeftSaturn());
+      if (d.userExceededLifeExpectancy()) {
+        $('#exceeded').text("Congratulations! You have exceeded your life expectancy!");
+      } else {
+        $('#exceeded').text("You have not yet exceeded your life expectancy...keep going!");
+      }
+    } else {
+      $('#validDate').text("The date you entered is invalid");
+    }
   });
 });

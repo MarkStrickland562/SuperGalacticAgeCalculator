@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <title>Weekday Calculator</title>
+    <title>Super Galactic Age Calculator</title>
+    <link type="text/css" href="./css/styles.css">
   </head>
   <body>
-    <form id="weekday-form">
-      <label for="myDate">Enter a date:</label>
-      <input id="myDate" type="date">
-      <button type="submit">Submit</button>
-    </form>
-    <p id="result"></p>
+    <div class="container">
+      <form id="weekday-form">
+        <label for="myDate">Enter your Date of Birth:</label>
+        <input id="myDate" type="date">
+        <button type="submit">Go!</button>
+      </form>
+      <tr>
+        <th>Earth Age</th>
+        <th>Mercury Age</th>
+        <th>Venus Age</th>
+        <th>Mars Age</th>
+        <th>Jupiter Age</th>
+        <th>Saturn Age</th>
+      </tr>
+      <tr>
+        <td id="earthAge"</td>
+        <td id="mercuryAge"</td>
+        <td id="venusAge"</td>
+        <td id="marsAge"</td>
+        <td id="jupiterAge"</td>
+        <td id="saturnAge"</td>
+      </tr>
+    </div>
   </body>
 </html>

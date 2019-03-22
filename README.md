@@ -12,7 +12,7 @@
 
 ## Description
 A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. This application will determine a user's age based on a planet's solar years
-including the planets Mercury, Venus, Mars and Jupiter. The application will also calculate how many years a user has left on each planet based on average life expectancy.
+including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application will also calculate how many years a user has left on each planet based on average life expectancy.
 ## Known Bugs
 
 * No known bugs.
@@ -370,14 +370,18 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
 
        $ cd GalacticAgeCalculator
 2. Install the required packages:
+
        $ npm Install
 3. Build the application:
+
        $ npm run build
 4. Run the application:
+
        $ npm run start
 
 #### Test the application
 1. Execute the tests with Jasmine and karma:
+
        $ npm run test
 
 ## Built With

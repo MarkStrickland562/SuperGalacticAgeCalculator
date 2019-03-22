@@ -5,9 +5,11 @@ $(document).ready(function() {
     event.preventDefault();
     let myDate = $('#myDate').val();
     let d = new AgeCalculator(myDate, 'M');
-    $('#result').text(d.userBirthDate);
-console.log(d.userYearsLeftEarth());
-console.log(d.userBirthDateIsValid());
-
+    $('#earthAge').text(d.userAgeEarth());
+    $('#mercuryAge').text(d.userAgeMercury());
+    $('#venusAge').text(d.userAgeVenus());
+    $('#marsAge').text(d.userAgeMars());
+    $('#jupiterAge').text(d.userAgeJupiter());
+    $('#saturnAge').text(d.userAgeSaturn());
   });
 });

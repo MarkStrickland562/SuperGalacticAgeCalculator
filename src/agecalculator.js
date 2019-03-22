@@ -76,4 +76,26 @@ export default class AgeCalculator {
     }
   }
 
+  userYearsLeftJupiter() {
+    const maleLifeExp = 76;
+    const femaleLifeExp = 81;
+
+    if (this.gender === 'M') {
+      return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / 11.86));
+    } else {
+      return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / 11.86));
+    }
+  }
+
+  userYearsLeftSaturn() {
+    const maleLifeExp = 76;
+    const femaleLifeExp = 81;
+
+    if (this.gender === 'M') {
+      return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / 29.457));
+    } else {
+      return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / 29.457));
+    }
+  }
+
 }

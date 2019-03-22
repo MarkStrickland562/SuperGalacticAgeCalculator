@@ -6,6 +6,6 @@ $(document).ready(function() {
     let myDate = $('#myDate').val();
     let d = new AgeCalculator(myDate, 'M');
     $('#result').text(d.userBirthDate);
-console.log(d.userYearsLeftVenus());
+console.log(d.userYearsLeftEarth());
   });
 });

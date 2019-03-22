@@ -90,6 +90,20 @@ describe('AgeCalculator', function() {
     expect(userAge.userYearsLeftMars()).toEqual(10);
   });
 
+  it('should calculate the remaining years of life based on gender for the user on Jupiter', function() {
+    let testDate = "1962-05-03";
+    let gender = "M";
+    let userAge = new AgeCalculator(testDate, gender);
 
+    expect(userAge.userYearsLeftJupiter()).toEqual(1);
+  });
+
+  it('should calculate the remaining years of life based on gender for the user on Saturn', function() {
+    let testDate = "1962-05-03";
+    let gender = "M";
+    let userAge = new AgeCalculator(testDate, gender);
+
+    expect(userAge.userYearsLeftSaturn()).toBeLessThan(1);
+  });
 
 })

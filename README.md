@@ -34,9 +34,13 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Date of Birth</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Acknowledgment that a date of birth was entered</td>
   </tr>
+</table>
+
+<table>
   <tr>
     <th>Specification 02</th>
     <th></th>
@@ -49,9 +53,13 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>A non-null value</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Error message if a value was not entered</td>
   </tr>
+</table>
+
+<table>
   <tr>
     <th>Specification 03</th>
     <th></th>
@@ -64,9 +72,13 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Valid date in the past</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Error message if the entered value is not valid</td>
   </tr>
+</table>
+
+<table>
   <tr>
     <th>Specification 04</th>
     <th></th>
@@ -79,9 +91,13 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Valid date in the past</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Age in Earth years</td>
   </tr>
+</table>
+
+<table>
   <tr>
     <th>Specification 05</th>
     <th></th>
@@ -94,9 +110,13 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Age in Mercury years</td>
   </tr>
+</table>
+
+<table>
   <tr>
     <th>Specification 06</th>
     <th></th>
@@ -109,9 +129,13 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Age in Venus years</td>
   </tr>      
+</table>
+
+<table>
   <tr>
     <th>Specification 07</th>
     <th></th>
@@ -124,9 +148,13 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Age in Mars years</td>
   </tr>
+</table>
+
+<table>
   <tr>
     <th>Specification 08</th>
     <th></th>
@@ -139,11 +167,34 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Age in Jupiter years</td>
   </tr>
+</table>
+
+<table>
   <tr>
     <th>Specification 09</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Behavior</td>
+    <td>The application must return the entered age in Saturn years (1 Saturn year = 29.457 Earth years)</td>
+  </tr>
+  <tr>
+    <td>Input</td>
+    <td>Positive integer</td>
+  </tr>
+  <tr>
+    <td>Output</td>
+    <td>Age in Saturn years</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Specification 10</th>
     <th></th>
   </tr>
   <tr>
@@ -154,11 +205,15 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Life Expectancy</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Acknowledgment that a life expectancy was entered</td>
   </tr>
+</table>
+
+<table>
   <tr>
-    <th>Specification 10</th>
+    <th>Specification 11</th>
     <th></th>
   </tr>
   <tr>
@@ -169,11 +224,15 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Life expectancy on Mercury</td>
   </tr>    
+</table>
+
+<table>
   <tr>
-    <th>Specification 11</th>
+    <th>Specification 12</th>
     <th></th>
   </tr>
   <tr>
@@ -184,26 +243,34 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Life expectancy on Venus</td>
   </tr>    
+</table>
+
+<table>
   <tr>
-    <th>Specification 12</th>
+    <th>Specification 13</th>
     <th></th>
   </tr>
   <tr>
     <td>Behavior</td>
-    <td>The application must calculate the users life expectancy on Nars</td>
+    <td>The application must calculate the users life expectancy on Mars</td>
   </tr>
   <tr>
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Life expectancy on Mars</td>
   </tr>    
+</table>
+
+<table>
   <tr>
-    <th>Specification 13</th>
+    <th>Specification 14</th>
     <th></th>
   </tr>
   <tr>
@@ -214,11 +281,34 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Life expectancy on Jupiter</td>
   </tr>    
+</table>
+
+<table>
   <tr>
-    <th>Specification 14</th>
+    <th>Specification 15</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Behavior</td>
+    <td>The application must calculate the users life expectancy on Saturn</td>
+  </tr>
+  <tr>
+    <td>Input</td>
+    <td>Positive integer</td>
+  </tr>
+  <tr>
+    <td>Output</td>
+    <td>Life expectancy on Saturn</td>
+  </tr>    
+</table>
+
+<table>
+  <tr>
+    <th>Specification 16</th>
     <th></th>
   </tr>
   <tr>
@@ -229,9 +319,11 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Input</td>
     <td>Positive integer</td>
   </tr>
-  <tr>Output</td>
+  <tr>
+    <td>Output</td>
     <td>Number of years lived passed life expectancy</td>
   </tr>    
+</table>
 </details>
 
 ## Setup and Use

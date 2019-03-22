@@ -4,8 +4,8 @@ $(document).ready(function() {
   $('#weekday-form').submit(function(event) {
     event.preventDefault();
     let myDate = $('#myDate').val();
-    let d = new AgeCalculator(myDate);
+    let d = new AgeCalculator(myDate, 'M');
     $('#result').text(d.userBirthDate);
-console.log(d.userAgeSaturn());
+console.log(d.userYearsLeft());
   });
 });

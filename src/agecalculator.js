@@ -1,10 +1,11 @@
 export default class AgeCalculator {
 
-  constructor(inputBirthDate) {
+  constructor(inputBirthDate, inputGender) {
     this.year = parseInt(inputBirthDate.substring(0,4));
     this.month = parseInt(inputBirthDate.substring(5,7));
     this.day = parseInt(inputBirthDate.substring(8,10));
     this.userBirthDate = new Date(this.year, this.month - 1, this.day);
+    this.gender = inputGender;
   }
 
   userAgeEarth() {
@@ -31,4 +32,14 @@ export default class AgeCalculator {
     return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / 29.457));
   }
 
+  userYearsLeft() {
+    const maleLifeExp = 76;
+    const femaleLifeExp = 81;
+
+    if (this.gender === 'M') {
+      return maleLifeExp - this.userAgeEarth();
+    } else {
+      return femaleLifeExp - this.userAgeEarth();
+    }
+  }
 }

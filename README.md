@@ -28,14 +28,14 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
   </tr>
   <tr>
     <td>Behavior</td>
-    <td>The application must allow input of a user's age</td>
+    <td>The application must allow input of a user's date of birth</td>
   </tr>
   <tr>
     <td>Input</td>
-    <td>Age</td>
+    <td>Date of Birth</td>
   </tr>
   <tr>Output</td>
-    <td>Acknowledgment that an age was entered</td>
+    <td>Acknowledgment that a date of birth was entered</td>
   </tr>
   <tr>
     <th>Specification 02</th>
@@ -43,7 +43,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
   </tr>
   <tr>
     <td>Behavior</td>
-    <td>A non-null value must be entered</td>
+    <td>A non-null value for date of birth must be entered</td>
   </tr>
   <tr>
     <td>Input</td>
@@ -58,32 +58,32 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
   </tr>
   <tr>
     <td>Behavior</td>
-    <td>The value must be a positive integer</td>
+    <td>The value must be a valid date in the past</td>
   </tr>
   <tr>
     <td>Input</td>
-    <td>Positive integer</td>
-  </tr>
-  <tr>Output</td>
-    <td>Error message if the entered value is not valid</td>
-  </tr>
-  <tr>
-    <th>Specification 03</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td>Behavior</td>
-    <td>The value must be a positive integer</td>
-  </tr>
-  <tr>
-    <td>Input</td>
-    <td>Positive integer</td>
+    <td>Valid date in the past</td>
   </tr>
   <tr>Output</td>
     <td>Error message if the entered value is not valid</td>
   </tr>
   <tr>
     <th>Specification 04</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Behavior</td>
+    <td>The application must return the user's age in Earth years</td>
+  </tr>
+  <tr>
+    <td>Input</td>
+    <td>Valid date in the past</td>
+  </tr>
+  <tr>Output</td>
+    <td>Age in Earth years</td>
+  </tr>
+  <tr>
+    <th>Specification 05</th>
     <th></th>
   </tr>
   <tr>
@@ -98,7 +98,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Age in Mercury years</td>
   </tr>
   <tr>
-    <th>Specification 05</th>
+    <th>Specification 06</th>
     <th></th>
   </tr>
   <tr>
@@ -113,7 +113,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Age in Venus years</td>
   </tr>      
   <tr>
-    <th>Specification 05</th>
+    <th>Specification 07</th>
     <th></th>
   </tr>
   <tr>
@@ -128,7 +128,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Age in Mars years</td>
   </tr>
   <tr>
-    <th>Specification 06</th>
+    <th>Specification 08</th>
     <th></th>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Age in Jupiter years</td>
   </tr>
   <tr>
-    <th>Specification 07</th>
+    <th>Specification 09</th>
     <th></th>
   </tr>
   <tr>
@@ -158,7 +158,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Acknowledgment that a life expectancy was entered</td>
   </tr>
   <tr>
-    <th>Specification 08</th>
+    <th>Specification 10</th>
     <th></th>
   </tr>
   <tr>
@@ -173,7 +173,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Life expectancy on Mercury</td>
   </tr>    
   <tr>
-    <th>Specification 09</th>
+    <th>Specification 11</th>
     <th></th>
   </tr>
   <tr>
@@ -188,7 +188,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Life expectancy on Venus</td>
   </tr>    
   <tr>
-    <th>Specification 10</th>
+    <th>Specification 12</th>
     <th></th>
   </tr>
   <tr>
@@ -203,7 +203,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Life expectancy on Mars</td>
   </tr>    
   <tr>
-    <th>Specification 11</th>
+    <th>Specification 13</th>
     <th></th>
   </tr>
   <tr>
@@ -218,7 +218,7 @@ including the planets Mercury, Venus, Mars and Jupiter. The application will als
     <td>Life expectancy on Jupiter</td>
   </tr>    
   <tr>
-    <th>Specification 12</th>
+    <th>Specification 14</th>
     <th></th>
   </tr>
   <tr>

@@ -32,7 +32,7 @@ export default class AgeCalculator {
     return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / 29.457));
   }
 
-  userYearsLeft() {
+  userYearsLeftEarth() {
     const maleLifeExp = 76;
     const femaleLifeExp = 81;
 
@@ -42,4 +42,16 @@ export default class AgeCalculator {
       return femaleLifeExp - this.userAgeEarth();
     }
   }
+
+  userYearsLeftMercury() {
+    const maleLifeExp = 76;
+    const femaleLifeExp = 81;
+
+    if (this.gender === 'M') {
+      return Math.floor((maleLifeExp - this.userAgeEarth()) * (1 / .24));
+    } else {
+      return Math.floor((femaleLifeExp - this.userAgeEarth()) * (1 / .24));
+    }
+  }
+
 }

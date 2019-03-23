@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="row bg-div">
+      <h1>Super Galactic Age Calculator</h1>
       <form id="weekday-form">
         <label for="myDate">Enter your Date of Birth:</label>
         <input id="myDate" type="date">
@@ -22,38 +22,47 @@
         <button class="btn-submit" type="submit">Go!</button>
       </form>
       <p><span id="validDate"></span></p>
+      <p>Your Planet-Specific Age Is:</p>
+      <table>
+        <tr class="row-header">
+          <th>Earth</th>
+          <th>Mercury</th>
+          <th>Venus</th>
+          <th>Mars</th>
+          <th>Jupiter</th>
+          <th>Saturn</th>
+        </tr>
+        <tr class="row-data">
+          <td id="earthAge"></td>
+          <td id="mercuryAge"></td>
+          <td id="venusAge"></td>
+          <td id="marsAge"></td>
+          <td id="jupiterAge"></td>
+          <td id="saturnAge"></td>
+        </tr>
+      </table>
       <br>
-      <p>Your Earth Age is: <span id="earthAge"></span></p>
-      <p>Your Mercury Age is: <span id="mercuryAge"></span></p>
-      <p>Your Venus Age is: <span id="venusAge"></span></p>
-      <p>Your Mars Age is: <span id="marsAge"></span></p>
-      <p>Your Jupiter Age is: <span id="jupiterAge"></span></p>
-      <p>Your Saturn Age is: <span id="saturnAge"></span></p>
-      <br>
-      <p>Your Expected Years Left on Earth is: <span id="userYearsLeftEarth"></span></p>
-      <p>Your Expected Years Left on Mercury is: <span id="userYearsLeftMercury"></span></p>
-      <p>Your Expected Years Left on Venus is: <span id="userYearsLeftVenus"></span></p>
-      <p>Your Expected Years Left on Mars is: <span id="userYearsLeftMars"></span></p>
-      <p>Your Expected Years Left on Jupiter is: <span id="userYearsLeftJupiter"></span></p>
-      <p>Your Expected Years Left on Saturn is: <span id="userYearsLeftSaturn"></span></p>
+      <p>Your Expected Years of Life Left Are:</p>
+      <table>
+        <tr class="row-header">
+          <th>Earth</th>
+          <th>Mercury</th>
+          <th>Venus</th>
+          <th>Mars</th>
+          <th>Jupiter</th>
+          <th>Saturn</th>
+        </tr>
+        <tr class="row-data">
+          <td id="userYearsLeftEarth"></td>
+          <td id="userYearsLeftMercury"></td>
+          <td id="userYearsLeftVenus"></td>
+          <td id="userYearsLeftMars"></td>
+          <td id="userYearsLeftJupiter"></td>
+          <td id="userYearsLeftSaturn"></td>
+        </tr>
+      </table>
       <br>
       <p><span id="exceeded"></span></p>
-        <!-- <tr class="row-header">
-        <th>Earth Age</th>
-        <th>Mercury Age</th>
-        <th>Venus Age</th>
-        <th>Mars Age</th>
-        <th>Jupiter Age</th>
-        <th>Saturn Age</th>
-      </tr>
-      <tr class="row-data">
-        <td id="earthAge"</td>
-        <td id="mercuryAge"</td>
-        <td id="venusAge"</td>
-        <td id="marsAge"</td>
-        <td id="jupiterAge"</td>
-        <td id="saturnAge"</td>
-      </tr> -->
     </div>
   </body>
 </html>

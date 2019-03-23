@@ -20,8 +20,16 @@ $(document).ready(function() {
       $('#userYearsLeftMercury').text(d.userYearsLeftMercury());
       $('#userYearsLeftVenus').text(d.userYearsLeftVenus());
       $('#userYearsLeftMars').text(d.userYearsLeftMars());
-      $('#userYearsLeftJupiter').text(d.userYearsLeftJupiter());
-      $('#userYearsLeftSaturn').text(d.userYearsLeftSaturn());
+      if (d.userYearsLeftJupiter() < 1) {
+        $('#userYearsLeftJupiter').text('< 1');
+      } else {
+        $('#userYearsLeftJupiter').text(d.userYearsLeftJupiter());
+      }
+      if (d.userYearsLeftSaturn() < 1) {
+        $('#userYearsLeftSaturn').text('< 1');
+      } else {
+        $('#userYearsLeftSaturn').text(d.userYearsLeftSaturn());
+      }
       if (d.userExceededLifeExpectancy()) {
         $('#exceeded').text("Congratulations! You have exceeded your life expectancy!");
       } else {

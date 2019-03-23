@@ -1,5 +1,6 @@
 import AgeCalculator from './agecalculator.js';
 import './styles.css';
+import './img/comet.jpg';
 
 $(document).ready(function() {
   $('#weekday-form').submit(function(event) {

@@ -1,10 +1,12 @@
 import AgeCalculator from './agecalculator.js';
+import './styles.css';
 
 $(document).ready(function() {
   $('#weekday-form').submit(function(event) {
     event.preventDefault();
     let myDate = $('#myDate').val();
-    let d = new AgeCalculator(myDate, 'M');
+    let myGender = $('input:radio[name=myGender]:checked').val();
+    let d = new AgeCalculator(myDate, myGender);
     if (d.userBirthDateIsValid()) {
       $('#validDate').text("The date you entered is valid.");
       $('#earthAge').text(d.userAgeEarth());

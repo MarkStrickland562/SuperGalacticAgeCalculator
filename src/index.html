@@ -8,9 +8,17 @@
   </head>
   <body>
     <div class="container">
+      <div class="row bg-div">
       <form id="weekday-form">
         <label for="myDate">Enter your Date of Birth:</label>
         <input id="myDate" type="date">
+        <div>
+          <br>
+          Select your Gender:
+          <label><input type="radio" name="myGender" value="M" checked="checked">Male</label>
+          <label><input type="radio" name="myGender" value="F">Female</label>
+        </div>
+        <br>
         <button type="submit">Go!</button>
       </form>
       <p><span id="validDate"></span></p>

@@ -389,7 +389,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
        $ cd GalacticAgeCalculator
 2. Install the required packages:
 
-       $ npm Install
+       $ npm install
 3. Build the application:
 
        $ npm run build
@@ -398,7 +398,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
        $ npm run start
 
 #### Test the application
-1. Execute the tests with Jasmine and karma:
+1. Execute the tests with Jasmine and Karma:
 
        $ npm run test
 

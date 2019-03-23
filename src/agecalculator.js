@@ -7,6 +7,9 @@ export default class AgeCalculator {
     this.userBirthDate = new Date(this.year, this.month - 1, this.day);
     this.userGender = inputGender.toUpperCase();
     this.currentDate = new Date;
+    this.currentYear = this.currentDate.getFullYear();
+    this.leapDays = this.getLeapDays();
+    this.currentDate.setDate(this.currentDate.getDate() - this.leapDays);
   }
 
   userBirthDateIsValid() {
@@ -16,29 +19,48 @@ export default class AgeCalculator {
       return true
     }
   }
-  
+
+  isLeapYear(theYear) {
+    if (theYear % 4 === 0 && (theYear % 100 != 0 || theYear % 400 === 0)) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  getLeapDays() {
+    let leapDays = 0;
+    for (let i = this.year + 1; i <= this.currentYear; i++) {
+      if (this.isLeapYear(i)) {
+        leapDays++;
+      }
+    }
+    return leapDays;
+  }
+
   userAgeEarth() {
-    return Math.floor((new Date() - this.userBirthDate) / 31536000000);
+    return Math.floor((this.currentDate - this.userBirthDate) / 31536000000);
   }
 
   userAgeMercury() {
-    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / .24));
+    return Math.floor(((this.currentDate - this.userBirthDate) / 31536000000)*(1 / .24));
   }
 
   userAgeVenus() {
-    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / .62));
+    return Math.floor(((this.currentDate - this.userBirthDate) / 31536000000)*(1 / .62));
   }
 
   userAgeMars() {
-    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / 1.88));
+    return Math.floor(((this.currentDate - this.userBirthDate) / 31536000000)*(1 / 1.88));
   }
 
   userAgeJupiter() {
-    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / 11.86));
+    return Math.floor(((this.currentDate - this.userBirthDate) / 31536000000)*(1 / 11.86));
   }
 
   userAgeSaturn() {
-    return Math.floor(((new Date() - this.userBirthDate) / 31536000000)*(1 / 29.457));
+    return Math.floor(((this.currentDate - this.userBirthDate) / 31536000000)*(1 / 29.457));
   }
 
   userYearsLeftEarth() {

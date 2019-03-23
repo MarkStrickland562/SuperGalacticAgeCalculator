@@ -1,5 +1,5 @@
 import AgeCalculator from './agecalculator.js';
-import './styles.css';
+import './css/styles.css';
 import './img/comet.jpg';
 
 $(document).ready(function() {

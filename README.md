@@ -325,6 +325,24 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
     <td>Number of years lived passed life expectancy</td>
   </tr>    
 </table>
+<table>
+  <tr>
+    <th>Specification 17</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Behavior</td>
+    <td>The application must account for leap years in calculating age.</td>
+  </tr>
+  <tr>
+    <td>Input</td>
+    <td>Positive integer</td>
+  </tr>
+  <tr>
+    <td>Output</td>
+    <td>Number of leap days to be accounted for</td>
+  </tr>    
+</table>
 </details>
 
 ## Setup and Use

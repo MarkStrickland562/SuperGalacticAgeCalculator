@@ -122,4 +122,28 @@ describe('AgeCalculator', function() {
 
     expect(userAge.userExceededLifeExpectancy()).toBeTruthy();
   });
+
+  it('should validate that a year is a leap year', function() {
+    let year = 2000;
+    let testDate = "1962-05-03";
+    let gender = "M";
+    let userAge = new AgeCalculator(testDate, gender);
+    expect(userAge.isLeapYear(year)).toBeTruthy();
+  });
+
+  it('should validate that a year is not a leap year', function() {
+    let year = 1990;
+    let testDate = "1962-05-03";
+    let gender = "M";
+    let userAge = new AgeCalculator(testDate, gender);
+    expect(userAge.isLeapYear(year)).toBeFalsy();
+  });
+
+  it('should calculate the number of leap days between the entered date of birth and the current date', function() {
+    let testDate = "1962-05-03";
+    let gender = "M";
+    let userAge = new AgeCalculator(testDate, gender);
+    expect(userAge.getLeapDays()).toEqual(14);
+  });
+
 })
